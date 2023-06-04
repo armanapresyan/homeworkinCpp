@@ -1,5 +1,5 @@
 //1
-/* #include <iostream>
+#include <iostream>
 int main()
 {
 int number{0};
@@ -11,10 +11,10 @@ while(number != 0){
 }
 std::cout<<"digit sum: "<<sum<<std::endl;
 return 0;
-} */
+} 
 
 //2
-/* 
+
 #include <iostream>
 int main()
 {
@@ -29,10 +29,10 @@ while(number != 0){
 }
 std::cout<<"digits multiplication - sum: "<<p-sum<<std::endl;
 return 0;
-} */
+} 
 
 //3
-/* 
+
 #include <iostream>
 int numberOddCounts(int a, int b);
 int main()
@@ -60,4 +60,25 @@ int numberOddCounts(int a, int b)
          }
      }
      return count;
-} */
+}
+
+//4
+
+
+#include <iostream>
+#include <vector>
+
+
+int main()
+{ 
+  int count{0};
+  std::vector<int> arr = {4, 1, 3, 3, 4};
+  for(int i = 1; i < arr.size(); ++i){
+      if(arr[i] % i == 0){
+          count++;
+          }
+      }
+  std::cout<<"the number of array members that are divisible by their index without remainder: "<<count<<std::endl;
+  return 0;
+}
+
